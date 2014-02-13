@@ -1,0 +1,14 @@
+<plugin>
+  <nom>jQuery Update</nom>
+  <auteur>Michel @ Vertige ASBL</auteur>
+  <licence>GPL</licence>
+  <version>1.7.2</version>
+  <etat>stable</etat>
+  <description>Permet d'utiliser une version de jQuery plus récente dans l'espace public</description>
+  <prefix>jquery_update</prefix>
+  <necessite id='SPIP' version='[2.1.0;)' />
+	<pipeline>
+		<nom>insert_head</nom>
+		<inclure>jquery_update_pipelines.php</inclure>
+	</pipeline>
+</plugin>
